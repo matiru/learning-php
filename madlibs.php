@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+    <form action="madlibs.php" method ="get">
+    
+    color:<input type = "text" name ="color"><br>
+    noun: <input type = "text" name = "noun"><br>
+    footballer: <input type = "text" name = "footballer"><br>
+    <input type ="submit">
+    </form>
+      <?php
+      $color = $_GET["color"];
+      $noun = $_GET["noun"];
+      $footballer =$_GET["footballer"] ;
+
+      echo "Roses are $color <br>";
+      echo "$noun is blue <br>";
+      echo "I love $footballer <br>";
+      
+      ?>
+        
+    </body>
+</html>
